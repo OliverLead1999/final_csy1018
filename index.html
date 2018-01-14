@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
+    <title>Home</title> <!-- These are standard header information, title of the webpage what char set is being used, how the  content is being viewed -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This links to the style sheet that includes all of the style information for the HTML to use.-->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://use.fontawesome.com/bd68a66cf4.js"></script>
+    <script src="https://use.fontawesome.com/bd68a66cf4.js"></script> <!-- These are for the speaker icons that come from font awesome.It links to the software and there website.-->
     <!-- This code for the hover text feature, i adapated from the W3Schools articles on how to add a css image overlay - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade --> 
     <style>
-      .container {
+      .container { 
         position: relative;
         width: 100%;
       }
@@ -35,7 +35,7 @@
         opacity: 1;
       }
 
-      .text {
+      .text  { 
         color: white;
         font-size: 15px;
         position: absolute;
@@ -48,13 +48,13 @@
 
 
   <body>
-    <header class="headertop">
+    <header class="headertop"> <!-- Simple header that always shows up at the top of the page.-->
       <h1> Assignment - Web Development</h1></header>
     <div class="wrapper">
       <main class="main">
 
 
-
+<!--The start of the main section, this is always in the middle of the page, based on where i put it in CSS -->
         <h2 style="text-align:center"><strong> Home - My Team</strong></h2> 
 
 
@@ -71,7 +71,7 @@
 
           <a style="float:right" onclick="document.getElementById('landingaudio').pause()">  
             <i class='fa fa-pause fa-2x' aria-hidden="true"></i></a>
-
+<!-- Both icons have been floated right to be on the right hand side of the page. This is out of the way of the text and header/navigation bar-->
 
 
 
@@ -80,21 +80,21 @@
 
           <p>But for now, look at my team and see how we developed this website.</p>
           
+          <!-- Introduction Paragraphs-->
           
           
-          
-          <div class="imageproperties"> 
+          <div class="imageproperties"> <!-- Uses the image and imageproperties class in CSS. All images have been optimized in Photoshop-->
             <div class="image">
               <div class="container">
-              <img src="Me-new.jpeg" alt="Me,Photo Main Page"
-                   title="Oliver - Main Photo"/>
+              <img src="Me-new.jpeg" alt="Me,Photo Main Page" 
+                   title="Oliver - Main Photo"/> <!-- Title for hover effect over image, alt tag for if image doesnt dispaly telling the user whats on screen.-->
                 <div class="overlay">
                   <div class="text">Oliver - I'm 18 years old and I'm studying Computing Internet Technology & Security. Ever since i can remember I've been interested in technology and the way computers work. Now that computers are a crucial part of the world and cyber security is very important to I decided to specialize. I want to work with making the world a safer place online. I did GCSE and A Level computing. In my free time I do a lot with music, playing piano and saxophone, composing music and watching Formula 1.</div>
-                </div>
+                </div> <!-- Breif Bio information on user -->
             </div>
             </div>
             
-            
+            <!-- These images work the same way as the one above.-->
             <div class="image">
               <div class="container">
                 <img src="Jacob-New.jpeg" alt="Jacob,Photo Main Page"
@@ -133,14 +133,13 @@
           <div class=".videolanding">
             <video width="1280" height="720" controls style="border:5px solid black">
               <source src="Group-Video.mp4"></video>
-          </div>
+          </div><!--Plays the video my group made--> 
           
         </div>
         <p>
             <a href="http://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Valid CSS!" />
+                    alt="Valid CSS!" /> <!--Validation of my CSS offical poster -->
                 </a>
             </p>
       </main>
@@ -160,7 +159,7 @@
     </div>
     
     
-    <footer class="footer_new">
+    <footer class="footer_new"> <!-- Simmilar to header but at bottom of page. Links to personal Facebook and Twitter.-->
       <h1>Helpful Links</h1>
    
         <a href="contact.html">
