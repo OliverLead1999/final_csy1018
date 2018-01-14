@@ -80,19 +80,21 @@ padding: 3px;
 .videolanding {
   min-height: 100%;
   width: 75%;
-  margin: 0 auto
+  margin: 0 auto;
+  display: block;
   
 }
 video {
   width: 75%;
   min-width: 75%; 
   height:auto;
-  
+  display: block
 }
 
 
 
 /* This is for the navigation */
+/* Adapted from https://codepen.io/smashtheshell/pen/ZBroXb */
 /* Some of this code has been edited and adapted from this simple navigation form from: https://codepen.io/lizcoultersmith/pen/dVaLLa */
 
 .nav {
