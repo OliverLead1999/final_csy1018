@@ -1,0 +1,125 @@
+body {
+  display: flex; /* This is for the whole page. */
+  flex-direction: column; /*This sets which way the flex box is laid out.Column means it will all go down the page.*/
+  min-height: 100vh;
+  margin: 0; /*This will set the margin around the page to 0, meaning it doesnt have one.*/
+  line-height: 100%;
+  font-family: 'Titillium Web', sans-serif; /*This font is from Google Fonts, and the link to the font is on the HTML5 LandingPage.*/
+}
+.wrapper { /*Wrapper is for the whole page.*/
+  display: flex; /* This will also set the wrapper to use flexbox properties.*/
+  flex-direction: column; /* This again will also go onto displaying the page in a column.*/
+  flex: 1 0 auto; 
+}
+
+.headertop {
+  order: -2;
+  background: rgb(33, 150, 243);
+  flex-direction: row; /* This again will also go onto displaying the page in a column.*/
+  text-align:center;
+  font-size: 9px;
+}
+
+.footer_new {
+  order: 4;
+  background: rgb(25, 118, 210);
+  flex-direction: row; /* This again will also go onto displaying the page in a column.*/
+  text-align:center;
+  font-size: 12px;
+}
+.main {
+  order: 0; /* The order goes below the navigation bar as it is set to 1. Nav is set to -1.*/
+  padding: 0.5em; /* This is the padding between the background and the main text. */
+  background: rgb(33, 150, 243); /*This sets the colour of the main text area.*/
+  flex: 1 0 auto;
+  flex-wrap:wrap
+}
+
+
+
+
+/*This is for adding images*/
+
+
+img {max-width:100%;}
+.imageproperties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.image {
+padding: 3px;
+}
+
+.images p {
+  position: absolute;
+  text-align: center
+}
+
+
+@media screen and (max-width:25em){ /* This will check the screen width. If it is below 25em then it will switch to the normal column style. */
+  img {max-width:100%;}
+  .imageproperties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+  }
+
+
+}
+
+
+
+
+
+/*This is for adding video*/
+/*Adding of this video has been taken from work in class. Code provided on Slack.*/
+
+
+.videolanding {
+  min-height: 100%;
+  width: 75%;
+  margin: 0 auto
+  
+}
+video {
+  width: 75%;
+  min-width: 75%; 
+  height:auto;
+  
+}
+
+
+
+/* This is for the navigation */
+/* Some of this code has been edited and adapted from this simple navigation form from: https://codepen.io/lizcoultersmith/pen/dVaLLa */
+
+.nav {
+  order: -1; /* This will place it somewhere on the screen. Order -1 is near the top */
+  background: rgb(25, 118, 210); /* This is the background of the navigation bar. It is set to a colour picked using the concept of materiel design. */
+  font-size: 19px; /* This defines the font size of the navigation text. I have set it to 19 as it needs to stand out and be big for users to see where they are going. */
+}
+
+nav ul /*This is for the whole navigation bar. It puts the navigation and the ul links together.*/{
+  list-style-type: none; /* This is set to none as without it, there would be bullet points before each of the navigation points.  */
+  display:flex; /* This makes the whole navigation bar be able to flex and move. Below I have set the flex direction to go in a column. This means that the navigation bar is set up to list all items in a column like fashion. Having it do this helps with the mobile first approach. */ 
+  flex-direction: column /* Colmun will list all boxes in a downwards column.*/
+}
+nav ul li a:hover{
+  background: rgb(0, 150, 136);
+}
+nav ul li a /* Instead of writing all of these seperatly, I have combined the different codes. This is for each block and link in the navigation bar */{
+  text-decoration:none; /* The text-decoration gets rid of the typical hyperlink line underneath all of the navigation text. */
+  color:rgb(255, 255, 255); /* I have set the colour to white to make it stand out above the dark blue background. */
+  display: block; /*This displays each navigation point in a block. */
+  padding: 0.5em; /* The padding is the difference between the navigation bars. */
+}
+
+@media screen and (min-width:25em){ /* This will check the screen width. If it is below 25em then it will switch to the normal column style. 
+  However, if it is above this, then it will switch to the below options. */
+  nav ul{
+    flex-direction: row; /*Here the flex-box direction has been switched to the row. This now means that instead of displaying all of the navigation down the page, it now displays it all in a row. */
+    justify-content:space-around; /* This makes sure that there is equal space around each block.*/
+  }
+}

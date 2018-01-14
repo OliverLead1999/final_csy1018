@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/bd68a66cf4.js"></script>
+    
+    <!--The code for the 3 column layout was taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns_responsive. W3Schools have helped with the understanding of this the 3 column layout -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media (max-width: 400px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+<header class="headertop">
+      <h1> Assignment - Web Development</h1></header>
+
+    <nav class="nav"> 
+      <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="Glossary.html">Glossary</a> </li>
+        <li><a href="Jobs.html">Jobs</a></li>
+        <li><a href="specialty.html">Specialty</a></li>
+
+        <li><a href="GoodPractise.html">UI Tips</a></li>
+        <li><a href="Reflection6.html">Reflection</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="wrapper">
+      <main class="main">
+        <h2 style="text-align:center"><strong>Jobs</strong></h2>
+        <p> There are many jobs in the world of computing. Thousands of Jobs and hundred of specialisations. </p>
+        <p> Here are 3 Web Development Jobs:</p>
+        
+      </main>
+    </div>
+    <!--The code for the 3 column layout was taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns_responsive. W3Schools have helped with the understanding of this the 3 column layout -->
+    <div class="row">
+      <div class="column" style= "background:rgb(33, 150, 243)";>
+        <h2>Preffered Choice Ltd - Agency</h2>
+        <p> Based in Central London. You will be developing new sites and themes using CSS frameworks (Bootstrap, Foundation) and working with International clients. 2 Years of experience is wanted</p>
+        <p><a href="http://www.preferred-choice.co.uk/latest-jobs?ref=BTFEDLON_1514361670&page=1&typelist=&keyword=web&locationlist=&categorylist=&salary_from=0&salary_to=760000&dateadded=#">View the Job Link here</a></p>
+     
+        
+      </div>
+      <div class="column" style= "background:rgb(33, 150, 243)";>
+        <h2>Job 2</h2>
+        <p>Some text..</p>
+      </div>
+      <div class="column" style= "background:rgb(33, 150, 243)";>
+        <h2>Job 3</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
+
+    
+    <footer class="footer_new">
+      <h1>Helpful Links</h1>
+
+      <a href="contact.html">
+        <i class="fa fa-address-book fa-3x" style="color:black"></i>
+      </a>
+
+
+      <a style="padding-left:25px;" href="https://www.facebook.com/TimeARDIS">
+        <i class="fa fa-facebook-square fa-3x" style="color:black"></i> 
+      </a>
+
+
+      <a style="padding-left:25px;" href="https://twitter.com/OlitheF1PS3">
+        <i class="fa fa-twitter-square fa-3x" style="color:black"></i>
+      </a>
+
+    </footer>
+  </body>
+</html>

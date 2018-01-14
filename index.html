@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/bd68a66cf4.js"></script>
+    <!-- This code for the hover text feature, i adapated from the W3Schools articles on how to add a css image overlay - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade --> 
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(25, 118, 210);
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    
+    
+    
+  </head>
+
+  <body>
+    <header class="headertop">
+      <h1> Assignment - Web Development</h1></header>
+    <div class="wrapper">
+      <main class="main">
+
+
+
+        <h2 style="text-align:center"><strong> Home - My Team</strong></h2> 
+
+
+        <!--The code below has been adpated. I have adapted it to play my own audio and also changed the button to a logo. However, the code was originally adapted from Mozilla Developers. https://developer.mozilla.org/de/docs/Web/HTML/Using_HTML5_audio_and_video#Controlling_media_playback-->
+
+        <audio id="landingaudio"  src="Home%20-%20Music.mp3"></audio>
+        
+        <div>
+          <!-- The audio clip used here was found from Ben Sounds. -->
+          <a style="float:right; padding-left:25px;" onclick="document.getElementById('landingaudio').play()">
+            <i class='fa fa-play fa-2x' aria-hidden="true">
+            </i> 
+          </a>
+
+          <a style="float:right" onclick="document.getElementById('landingaudio').pause()">  
+            <i class='fa fa-pause fa-2x' aria-hidden="true"></i></a>
+
+
+
+
+
+          <p>Welcome to my website! This is the home page You can navigate to all other parts of my website using the handy navigation bar above. </p>
+
+          <p>But for now, look at my team and see how we developed this website.</p>
+          
+          
+          
+          
+          <div class="imageproperties"> 
+            <div class="image">
+              <div class="container">
+              <img src="Me-new.jpeg" alt="Me,Photo Main Page"
+                   title="Oliver - Main Photo"/>
+                <div class="overlay">
+                  <div class="text">Oliver - </div>
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="image">
+              <div class="container">
+                <img src="Jacob-New.jpeg" alt="Jacob,Photo Main Page"
+                     title="Jacob - Main Photo"/>
+                <div class="overlay">
+                  <div class="text">Jacob - </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="image">
+              <div class="container">
+                <img src="abi-new.jpg" alt="Abi,Photo Main Page"
+                     title="Abi - Main Photo"/>
+                <div class="overlay">
+                  <div class="text">Abi - 19 years old and studying General Computing. I decided to take a computing course at university largely because of my passion for the subject, but also because I wanted to follow in the footsteps of my Grandad and Mum who have inspired me since I was little. My favourite pastimes outside of my studies are reading, writing and playing Dungeons and Dragons. </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="image">
+              <div class="container">
+                <img src="Osman-new.jpg" alt="Osman,Photo Main Page"
+                     title="Osman"/>
+                <div class="overlay">
+                  <div class="text">Osman </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h2 style="text-align:center"><strong> Group Video</strong></h2> 
+
+ 
+          <div class=".videolanding" align="center">
+            <video width="1280", height="720" controls style="border:5px solid black">>
+              <source src="Sample.mp4"></video>
+          </div>
+          
+        </div>
+      </main>
+      
+      <!-- This was adpated from the code pen article on flexbox navigation bar. Link Below https://codepen.io/smashtheshell/pen/ZBroXb-->
+      <nav class="nav"> 
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="Glossary.html">Glossary</a> </li>
+          <li><a href="Jobs.html">Jobs</a></li>
+          <li><a href="specialty.html">Specialty</a></li>
+          
+          <li><a href="GoodPractise.html">UI Tips</a></li>
+          <li><a href="Reflection6.html">Reflection</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    
+    <footer class="footer_new">
+      <h1>Helpful Links</h1>
+   
+        <a href="contact.html">
+          <i class="fa fa-address-book fa-3x" style="color:black"></i>
+        </a>
+      
+
+      <a style="padding-left:25px;" href="https://www.facebook.com/TimeARDIS">
+        <i class="fa fa-facebook-square fa-3x" style="color:black"></i> 
+        </a>
+        
+
+      <a style="padding-left:25px;" href="https://twitter.com/OlitheF1PS3">
+        <i class="fa fa-twitter-square fa-3x" style="color:black"></i>
+      </a>
+      
+    </footer>
+
+      </body>
+
+    </html>

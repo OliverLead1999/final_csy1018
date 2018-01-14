@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+      #map {
+        height: 400px;
+        width:  100%;
+      }
+    </style>
+    <script src="https://use.fontawesome.com/bd68a66cf4.js"></script>
+  </head>
+  
+  <body>
+    <header class="headertop">
+      <h1> Assignment - Web Development</h1></header>
+    
+    
+    <nav class="nav"> 
+      <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="Glossary.html">Glossary</a> </li>
+        <li><a href="Jobs.html">Jobs</a></li>
+        <li><a href="specialty.html">Specialty</a></li>
+
+        <li><a href="GoodPractise.html">UI Tips</a></li>
+        <li><a href="Reflection6.html">Reflection</a></li>
+      </ul>
+    </nav>
+    
+    <!--This code has been adapated and edited from this source. This is a form for contacting me.  https://codepen.io/ssbalakumar/pen/uzDIA</-->
+    <div class="wrapper">
+     <h2 style="text-align:center"><strong> Contact Us</strong></h2> 
+
+    <div class="container">  
+      <form id="contact" >
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+        
+        <fieldset>
+          <textarea placeholder="Type your Message Here...." tabindex="4" required></textarea>
+        </fieldset>
+        
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+        
+      </form>
+    </div>
+    </div>
+    <!--The code below has been adpated.-->
+    <h2 style="text-align:center"><strong> Our Location</strong></h2> 
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var northampton = {lat:52.2502206, lng: -0.894009};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: northampton
+        });
+        var marker = new google.maps.Marker({
+          position: northampton,
+          map: map
+        });
+      }
+
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoajX8N-hcNR8pn9hwnTF5l0z9sYEjxLs&callback=initMap">
+    </script>
+ 
+    
+    
+    <footer class="footer_new">
+      <h1>Helpful Links</h1>
+
+      <a href="contact.html">
+        <i class="fa fa-address-book fa-3x" style="color:black"></i>
+      </a>
+
+
+      <a style="padding-left:25px;" href="https://www.facebook.com/TimeARDIS">
+        <i class="fa fa-facebook-square fa-3x" style="color:black"></i> 
+      </a>
+
+
+      <a style="padding-left:25px;" href="https://twitter.com/OlitheF1PS3">
+        <i class="fa fa-twitter-square fa-3x" style="color:black"></i>
+      </a>
+
+    </footer>
+  </body>
+</html>
